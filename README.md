@@ -1,7 +1,7 @@
 # basic-react
 basic react app
 
-## install react-router-dom react-helmet
+## install react-router-dom react-helmet axios
 
 # Getting Started with Create React App
 
