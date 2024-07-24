@@ -5,7 +5,7 @@ import Metadata from './components/Metadata';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Post from './pages/Post';
+import PostDetail from './pages/PostDetail';
 
 const App = () => {
   return (
@@ -13,10 +13,10 @@ const App = () => {
       <Metadata title="Default Title" description="Default description for the website." />
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/post/:id" element={<Post />} /> {/* Dynamic Route */}
+          <Route path="/post/:id" element={<PostDetail />} /> {/* Add route for post details */}
         </Routes>
       </Layout>
     </>
